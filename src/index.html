@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronika Křivánková</title>
+    <link rel="icon" type="image/png" href="../assets/icons/bug.svg">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" data-en="Home" data-cz="Domů">Home</a></li>
+            <li><a href="aboutme.html" data-en="About" data-cz="O mě">About me</a></li>
+            <li><a href="certificate.html" data-en="Certificates" data-cz="Certifikáty">Certificates</a></li>
+            <li><a href="project.html" data-en="My Projects" data-cz="Projekty">Projects</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav class="mobileNav">
+        <a href="#" data-en="Home" data-cz="Domů">Home</a>
+        <a href="aboutme.html" data-en="About" data-cz="O mě">About me</a>
+        <a href="certificate.html" data-en="Certificates" data-cz="Certifikáty">Certificates</a>
+        <a href="project.html" data-en="Projects" data-cz="Projekty">Projects</a>
+        <div class="language-switch">
+            <button onclick="switchLanguage('en')">ENG</button>
+            <button onclick="switchLanguage('cz')">CZ</button>
+        </div>
+    </nav>
+
+    <div class="language-switch">
+        <button data-en="English" data-cz="Angličtina" onclick="switchLanguage('en')">English</button>
+        <button data-en="Czech" data-cz="Čeština" onclick="switchLanguage('cz')">Čeština</button>
+    </div>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="text">
+                    <h1>Veronika <br>Křivánková</h1>
+                        <h2>Software tester</h2>
+                            <p data-en="Hi, my name is Veronika and I am interested in <br> software testing with focus on automation." data-cz="Ahoj, jmenuji se Veronika a zabývám se manuálním <br>a automatizovaným testováním softwaru.">Hi, my name is Veronika and I am interested in <br>software testing with focus on automation.</p>
+                            <br>
+                            <div class="findme">
+                            <div><a href="https://github.com/Veronika0999/"><img src="../assets/icons/github.svg" alt="github"></a></div>
+                            <div><a href="https://www.linkedin.com/in/veronika-k-421732269/"><img src="../assets/icons/linkedin.svg" alt="github"></a></div>
+                    </div>
+                </div>
+                <img src="../assets/img/1691999124854-removebg-preview.png" alt="Obrázek">
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

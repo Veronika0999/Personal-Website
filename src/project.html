@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veronika Křivánková</title>
+  <link rel="icon" type="image/png" href="../assets/icons/bug.svg">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html" data-en="Home" data-cz="Domů">Home</a></li>
+        <li><a href="aboutme.html" data-en="About me" data-cz="O mě">About me</a></li>
+        <li><a href="certificate.html" data-en="Certificates" data-cz="Certifikáty">Certificates</a></li>
+        <li><a href="#" data-en="My Projects" data-cz="Projekty">My Projects</a></li>
+    </ul>
+</nav>
+  <div class="hamburger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <nav class="mobileNav">
+    <a href="index.html" data-en="Home" data-cz="Domů">Home</a>
+    <a href="aboutme.html" data-en="About" data-cz="O mě">About me</a>
+    <a href="certificate.html" data-en="Certificates" data-cz="Certifikáty">Certificates</a>
+    <a href="#" data-en="Projects" data-cz="Projekty">Projects</a>
+    <div class="language-switch">
+            <button onclick="switchLanguage('en')">ENG</button>
+            <button onclick="switchLanguage('cz')">CZ</button>
+    </div>
+  </nav>
+
+  <div class="language-switch">
+    <button data-en="English" data-cz="Angličtina" onclick="switchLanguage('en')">English</button>
+    <button data-en="Czech" data-cz="Čeština" onclick="switchLanguage('cz')">Čeština</button>
+</div>
+
+  <div class="container">
+    <h1 data-en="My Projects" data-cz="Projekty">My Projects</h1>
+    <section>
+      <h2 data-en="Python Projects" data-cz="Python Projekty">Python Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <a href="https://github.com/Veronika0999/IP-Address-Checker"><img class="robot-img" src="../assets/img/python.png" alt="Python 1"></a>
+            <h2 data-en="IP address checker" data-cz="Kontrola IP adres">IP address checker</h2>
+              <p class="project-info">Python</p>
+              <p class="project-info">Beautiful Soup</p>
+              <p data-en="The goal of this project is to manage IP addresses in a text file using Python. It validates, adds, and removes IP addresses from a list. The script reads the current list of IP addresses, updates it based on the provided lists for adding and removing, and writes the updated list back to the file."
+              data-cz="Cílem tohoto projektu je spravovat IP adresy v textovém souboru pomocí Pythonu. Validuje, přidává a odstraňuje IP adresy ze seznamu. Skript čte aktuální seznam IP adres, aktualizuje jej na základě poskytnutých seznamů pro přidávání a odebírání a zapisuje aktualizovaný seznam zpět do souboru.">The goal of this project is to manage IP addresses in a text file using Python. It validates, adds, and removes IP addresses from a list. The script reads the current list of IP addresses, updates it based on the provided lists for adding and removing, and writes the updated list back to the file.</p>
+          </div>
+        </div>
+    </section>
+    <section>
+      <h2 data-en="Robot Framework Projects" data-cz="Robot Framework Projekty">Robot Framework Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <a href="https://github.com/Veronika0999/Alza-Robot-Framework"><img class="robot-img" src="../assets/img/Robot-framework-logo.png" alt="HTML & CSS Projekt 1"></a>
+            <h2>Alza.cz</h2>
+              <p class="project-info">Browser Library</p>
+              <p data-en="The goal of the project was to apply skills in using the Browser Library through practical test scenarios. Alza.cz served as a testing ground, where I created test cases targeting basic functionalities such as registration, login and basic usability aspects. The main project repository contains test data and configurations." data-cz="Cílem projektu bylo uplatnit dovednosti v používání knihovny Browser prostřednictvím praktických testovacích scénářů. Alza.cz sloužila jako testovací prostředí, kde jsem vytvořil testovací případy zaměřené na základní funkce, jako je registrace, přihlášení a základní aspekty použitelnosti. Hlavní úložiště projektu obsahuje testovací data a konfigurace.">The goal of the project was to apply skills in using the Browser Library through practical test scenarios. Alza.cz served as a testing ground, where I created test cases targeting basic functionalities such as registration, login and basic usability aspects. The main project repository contains test data and configurations.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/Veronika0999/nopCommerce-Robot-Framework"><img class="robot-img" src="../assets/img/Robot-framework-logo.png" alt="HTML & CSS Projekt 2"></a>
+            <h2>nopCommerce</h2>
+              <p class="project-info">Browser Library</p>
+              <p class="project-info">Requests Library</p>
+              <p data-en="The primary goal of this project was to practice automated testing using the browser library. I developed test cases focusing on essential e-commerce functionalities such as product browsing, checkout processes and user account management. The project repository contains detailed test data and configurations that demonstrate the effectiveness of the automated testing procedures." data-cz="Hlavním cílem tohoto projektu bylo procvičit automatizované testování pomocí knihovny Browser. Vytvořil jsem testovací případy zaměřené na základní funkce e-commerce, jako je procházení produktů, procesy při nákupu a správa uživatelských účtů. Úložiště projektu obsahuje podrobná testovací data a konfigurace, které demonstrují účinnost automatizovaných testovacích postupů.">The primary goal of this project was to practice automated testing using the browser library. I developed test cases focusing on essential e-commerce functionalities such as product browsing, checkout processes and user account management. The project repository contains detailed test data and configurations that demonstrate the effectiveness of the automated testing procedures.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/Veronika0999/Saucedemo-practice-Robot-Framework"><img class="robot-img" src="../assets/img/Robot-framework-logo.png" alt="HTML & CSS Projekt 3"></a>
+            <h2>Saucedemo</h2>
+              <p class="project-info">Browser Library</p>
+              <p class="project-info">Requests Library</p>
+              <p data-en="The aim of the project was to practice automated testing by creating and executing some basic test cases. The simplicity of this website makes it an ideal platform for honing testing skills. The test cases focused on basic functionalities such as login, product browsing and checkout processes." data-cz="Cílem projektu bylo procvičit automatizované testování vytvořením a provedením základních testovacích případů. Jednoduchost tohoto webu z něj činí ideální platformu pro zdokonalování testovacích dovedností. Testovací případy se zaměřily na základní funkce, jako je přihlášení, procházení produktů a procesy při nákupu.">The aim of the project was to practice automated testing by creating and executing some basic test cases. The simplicity of this website makes it an ideal platform for honing testing skills. The test cases focused on basic functionalities such as login, product browsing and checkout processes.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/Veronika0999/Kitner-project"><img class="robot-img" src="../assets/img/Robot-framework-logo.png" alt="HTML & CSS Projekt 3"></a>
+            <h2>Kitner</h2>
+              <p class="project-info">Browser Library</p>
+              <p class="project-info">Requests Library</p>
+              <p data-en="This project is based on Radek Kitner's course 'How to Automate Tests', which focuses on test automation using the Browser library in Robot Framework. It also includes the Request library for handling HTTP requests." data-cz="Tento projekt vychází z kurzu Radka Kitnera 'Jak automatizovat testy', který se zaměřuje na automatizaci testování pomocí knihovny Browser v Robot Frameworku. Zahrnuje také knihovnu Request pro práci s HTTP požadavky.">This project is based on Radek Kitner's course 'How to Automate Tests', which focuses on test automation using the Browser library in Robot Framework. It also includes the Request library for handling HTTP requests.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 data-en="HTML & CSS Projects" data-cz="HTML & CSS Projekty">HTML & CSS Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <a href="https://github.com/Veronika0999/HH-Greece-project"><img src="../assets/img/greece.png" alt="HTML & CSS Projekt 1"></a>
+            <h2 data-en="HH Greece project" data-cz="HH Greece projekt">HH Greece project</h2>
+              <p class="project-info">HTML</p>
+              <p class="project-info">CSS</p>
+              <p data-en="The primary aim of the 'Hellenic Horizons: Accommodation & Adventures' project was to apply the comprehensive knowledge acquired from a Udemy course. It served as a practical exercise to hone and utilize the skills obtained, particularly in HTML and CSS, in the context of developing a simplistic website for a small travel agency specializing in offering trips to Greek islands." data-cz="Hlavním cílem projektu 'Hellenic Horizons: Accommodation & Adventures' bylo využít znalosti získané z kurzu na Udemy. Tento projekt sloužil jako praktické cvičení pro zdokonalení a využití dovedností v HTML a CSS při vytváření jednoduchého webu pro malou cestovní kancelář specializující se na výlety na řecké ostrovy.">The primary aim of the 'Hellenic Horizons: Accommodation & Adventures' project was to apply the comprehensive knowledge acquired from a Udemy course. It served as a practical exercise to hone and utilize the skills obtained, particularly in HTML and CSS, in the context of developing a simplistic website for a small travel agency specializing in offering trips to Greek islands. </p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/Veronika0999/Espresso-Elegance"><img src="../assets/img/coffee.png" alt="HTML & CSS Projekt 2"></a>
+            <h2>Espresso Elegance</h2>
+              <p class="project-info">HTML</p>
+              <p class="project-info">CSS</p>
+              <p class="project-info">JavaScript</p>
+              <p data-en="The primary objective behind the 'Espresso Elegance' project was to leverage the extensive knowledge gained from a Udemy course. It provided an invaluable opportunity to put theoretical concepts into practice, particularly focusing on refining HTML and CSS skills." data-cz="Hlavním cílem projektu 'Espresso Elegance' bylo využít rozsáhlé znalosti získané z kurzu na Udemy. Tento projekt poskytl neocenitelnou příležitost převést teoretické koncepty do praxe, zejména se zaměřením na zdokonalení dovedností v HTML a CSS.">The primary objective behind the 'Espresso Elegance' project was to leverage the extensive knowledge gained from a Udemy course. It provided an invaluable opportunity to put theoretical concepts into practice, particularly focusing on refining HTML and CSS skills.</p>
+        </div>
+        <div class="project">
+          <a href="https://github.com/Veronika0999/FirstPersonalWebsite"><img src="../assets/img/mywebsite.png" alt="HTML & CSS Projekt 3"></a>
+            <h2 data-en="First Personal Website" data-cz="První osobní portfolio">First Personal Website</h2>
+              <p class="project-info">HTML</p>
+              <p class="project-info">CSS</p>
+              <p class="project-info">JavaScript</p>
+              <p data-en="First Personal Website>The main goal of my initial portfolio project was to apply the basic knowledge and skills I had acquired through self-study and practical experience. It served as a platform to showcase my proficiency in web development, with a particular focus on HTML and CSS, by creating a digital portfolio of my work." data-cz="Hlavním cílem projektu bylo uplatnit základní znalosti a dovednosti získané samostudiem a praxí. Projekt sloužil jako platforma pro prezentaci mých schopností v oblasti tvorby webových stránek, zejména s důrazem na HTML a CSS, a to prostřednictvím vytvoření digitálního portfolia mé práce.">First Personal Website>The main goal of my initial portfolio project was to apply the basic knowledge and skills I had acquired through self-study and practical experience. It served as a platform to showcase my proficiency in web development, with a particular focus on HTML and CSS, by creating a digital portfolio of my work.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

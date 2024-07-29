@@ -1,0 +1,404 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #CFC4C4;
+  margin: 0;
+  padding: 0;
+  color: #524F4a;
+  font-family: Montserrat;
+}
+
+h1 {
+  font-size: 65px;
+  color: white;
+  font-family:Castoro Titling, sans-serif;
+  margin-left: 210px
+}
+
+.mobile-text {
+  display: none; 
+}
+
+h2 {
+  font-size: 25px;
+  font-family:Castoro Titling, sans-serif;
+  margin-top: 0;
+  margin-left: 210px
+}
+
+
+nav {
+  background-color: #CFC4C4;
+  text-align: right;
+}
+
+nav::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px; 
+  background-color: #fff; 
+  margin-top: 10px; 
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 20px 50px;
+  text-decoration: none;
+  color: #524F4a;
+  font-size: 20px
+}
+
+nav ul li a:hover {
+  color: #fff; 
+}
+
+.hamburger {
+  padding: 50px 40px;
+}
+
+.hamburger {
+  position: fixed; 
+  top: 20px;
+  right: 20px; 
+  padding: 20px;
+  z-index: 100; 
+}
+
+.bar1,
+.bar2,
+.bar3{
+  background-color: white;
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+.navbar .hamburger{
+display: none;
+}
+
+.navbar .hamburger:hover{
+  cursor: pointer;  
+}
+
+.mobileNav{
+  width: 80px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -160px;
+  padding: 16px;
+  transition: transform 0.3s;
+}
+
+.openDrawer {
+  transform: translateX(-160px);
+}
+
+.mobileNav a{
+  text-decoration: none;
+  color:#524F4a;
+  margin: 16px 0;
+}
+
+.mobileNav a:hover{
+  text-decoration: underline;
+}
+
+.entry {
+  background-color: #CFC4C4;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.entry2 {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px; 
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section-content {
+  margin-left: 210px;
+}
+
+.education {
+  background-color: #CFC4C4;
+}
+
+.work-experience {
+  background-color: white;
+}
+
+.project-info {
+  border: 2px solid #CFC4C4;
+  border-radius: 25px; 
+  padding: 10px; 
+  display: inline-block;
+}
+
+.certificates {
+  background-color: #CFC4C4;
+}
+
+.section-content p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.certificate-columns {
+  column-count: 2;
+}
+
+.certificate-column {
+  break-inside: avoid-column;
+}
+
+.certificate-column h2 {
+  padding-bottom: 22px;
+}
+
+.certificate-columns > h2 {
+  padding-bottom: 22px;
+}
+
+.line {
+  content: '';
+  display: block;
+  width: 55%;
+  height: 2px; 
+  background-color: #CFC4C4; 
+  margin-top: 10px; 
+}
+
+.line2 {
+  content: '';
+  display: block;
+  width: 55%;
+  height: 2px; 
+  background-color: #fff; 
+  margin-top: 10px; 
+}
+
+
+
+/* Language settings - Czech vs English */
+
+.language-switch {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 20px 20px 0 0; 
+  }
+  
+  .language-switch button {
+    background-color: transparent;
+    color: #333; 
+    border: 1px solid #fff; 
+    border-radius: 30px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 14px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .language-switch button:hover {
+    background-color: #f0f0f0;
+    border-color: #ddd; 
+  }
+  
+  .language-switch button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .language-switch button.selected {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border-color: #fff;
+  }
+
+
+/* Responsive web design */
+@media screen and (max-height: 696px){
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 60px;
+    margin-left: 180px
+  }
+  
+  h2 {
+    font-size: 25px;
+    margin-left: 180px
+  }
+
+  .section-content {
+    margin-left: 180px; /
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 60px;
+    margin: 50px
+  }
+  
+  h2 {
+    font-size: 25px;
+    margin: 50px
+  }
+
+  .section-content {
+    margin-left: 50px; 
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 45px;
+    margin: 30px
+  }
+
+  h2 {
+    font-size: 25px;
+    
+    text-align: center;
+  }
+
+  .certificate-columns {
+    column-count: 1;
+    display: block;
+  }
+
+  .dec {
+    padding-bottom: 50px;
+  }
+
+   .section-content {
+    margin-left: 30px; 
+  }
+  
+}
+
+@media only screen and (max-width: 768px){
+    .language-switch {
+        display: none; 
+    }
+
+    .mobileNav .language-switch {
+        display: grid;
+    }
+
+  
+  .navbar {
+      display: none; 
+  }
+  
+  .navbar .hamburger{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  
+      align-items: center;
+    }   
+}
+
+  .animateBar1 {
+    animation: flipBar1 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .animateBar2 {
+    animation: fadeBar2 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .animateBar3 {
+    animation: flipBar3 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes flipBar1 {
+  from {
+      transform: rotate(0);
+  }
+
+  from {
+      transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+      transform: scaleX(1);
+      opacity: 1;
+  }
+
+  from {
+      transform: scaleX(0);
+      opacity: 0;
+  }
+}
+
+@keyframes flipBar3 {
+  from {
+      transform: rotate(0);
+  }
+
+  from {
+      transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hamburger {
+      display: none; 
+  }
+  
+  .mobileNav {
+      display: flex; 
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  h1 {
+    display: none; 
+  }
+  
+  .mobile-text {
+    display: block;
+    font-size: 45px;
+    margin: 30px;
+    color: white;
+    font-family:Castoro Titling, sans-serif;
+  }
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veronika Křivánková</title>
+  <link rel="icon" type="image/png" href="../assets/icons/bug.svg">
+  <link rel="stylesheet" href="styles/cv.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+        <li><a href="index.html" data-en="Home" data-cz="Domů">Home</a></li>
+        <li><a href="#" data-en="Curriculum Vitae" data-cz="Životopis">Curriculum Vitae</a></li>
+        <li><a href="project.html" data-en="My Projects" data-cz="Projekty">My Projects</a></li>
+    </ul>
+</nav>
+  <div class="hamburger">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <nav class="mobileNav">
+    <a href="index.html" data-en="Home" data-cz="Domů">Home</a>
+    <a href="#" data-en="CV" data-cz="Životopis">CV</a>
+    <a href="project.html" data-en="Projects" data-cz="Projekty">Projects</a>
+    <div class="language-switch">
+        <button onclick="switchLanguage('en')">ENG</button>
+        <button onclick="switchLanguage('cz')">CZ</button>
+    </div>
+  </nav>
+
+  <div class="language-switch">
+    <button data-en="English" data-cz="Angličtina" onclick="switchLanguage('en')">English</button>
+    <button data-en="Czech" data-cz="Čeština" onclick="switchLanguage('cz')">Čeština</button>
+</div>
+  
+  <div class="section education">
+    <h1 data-en="Curriculum Vitae" data-cz="Životopis">Curriculum Vitae</h1>
+    <div class="mobile-text">CV</div>
+      <h2 data-en="Education" data-cz="Vzdělání">Education</h2>
+        <div class="entry">
+          <div class="section-content">
+            <h3 data-en="Master's degree" data-cz="Magisterské studium">Master's degree</h3>
+              <p data-en="Charles University" data-cz="Univerzita Karlova">Charles University</p>
+              <p data-en="Field: Institute of Information Science and Librarianship" data-cz="Obor: Ústav informačních studií a knihovnictví">Field: Institute of Information Science and Librarianship</p>
+              <p>2019 - 2021</p>
+                <br>
+              <div class="line2"></div>
+            <h3 data-en="Bachelor's degree" data-cz="Bakalářské studium">Bachelor's degree</h3>
+              <p data-en="Charles University" data-cz="Univerzita Karlova">Charles University</p>
+              <p data-en="Field: Institute of Information Science and Librarianship" data-cz="Obor: Ústav informačních studií a knihovnictví">Field: Institute of Information Science and Librarianship</p>
+              <p>2015 - 2019</p>
+              </div>
+          </div>
+        </div>
+  <div class="section work-experience">
+    <h2 data-en="Work experience" data-cz="Pracovní zkušenosti">Work experience</h2>
+    <div class="entry2">
+      <div class="section-content">
+        <h3>Software Tester</h3>
+          <p>Zen systems s.r.o.</p>
+          <p data-en="Sep 2023 - Present" data-cz="Září 2023 - Součastnost" >Sep 2023 - Present · <span id="duration"></span></p>
+          <p data-en="<strong>Job description: </strong> Tested desktop and mobile applications, identified, documented, and tracked bugs, collaborated with developers on bug fixes, <br> proposed changes and enhancements within testing and development, worked with databases, and provided reporting."
+            data-cz="<strong>Popis práce: </strong> Cílem práce je testování desktopových a mobilních aplikací, identifikace, dokumentace a sledování chyb, spolupráce <br>s vývojáři na opravách chyb, navrhování změn a vylepšení v rámci testování a vývoje, práce s databázemi a zajišťování reportingu."><strong>Job description: </strong>Tested desktop and mobile applications, identified, documented, and tracked bugs, collaborated with developers on bug fixes, <br> proposed changes and enhancements within testing and development, worked with databases, and provided reporting.</p>
+          <p class="project-info">Jira</p>
+          <p class="project-info">Confluence</p>
+          <p class="project-info">Kibana</p>
+          <p class="project-info">Sylius</p>
+          <p class="project-info">DBeaver</p>
+          <p class="project-info">Jenkins</p>
+          <p class="project-info">Pycharm</p>
+          <p class="project-info">Robot Framework</p>
+          <div class="line"></div>
+          <br>
+        <h3 data-en="Librarians in the periodicals section" data-cz="Knihovnice - zástupce vedoucí periodik">Librarians in the periodicals section</h3>
+          <p data-en="Municipal Library of Prague" data-cz="Městská knihovna v Praze">Municipal Library of Prague</p>
+          <p data-en="Jun 2022 - Oct 2023 · 1 yr 5 mos" data-cz="Červen 2022 - Říjen 2023 · 1 rok 5 měsíců">Jun 2022 - Oct 2023 · 1 yr 5 mos</p>
+          <p data-en="<strong>Job description: </strong> The responsibilities included maintaining, processing, and managing periodic press, communicating with distributors and <br> publishers of periodicals, handling file services, cataloging periodicals, and managing the OTRS agenda."
+            data-cz="<strong>Popis práce: </strong> Pracovní pozice zahrnovala zpracování a správu periodického tisku, komunikaci s distributory a vydavateli periodik, <br> správu souborových služeb, katalogizace periodik a správu agendy OTRS.">
+             <strong>Job description: </strong> The responsibilities included maintaining, processing, and managing periodic press, communicating with distributors and <br> publishers of periodicals, handling file services, cataloging periodicals, and managing the OTRS agenda.
+         </p>          
+          
+          <p class="project-info">Excel</p>
+          <p class="project-info">OTRS</p>
+          <div class="line"></div>
+          <br>
+        <h3 data-en="Data encoder" data-cz="Pracovní zkušenosti">Data encoder</h3>
+          <p data-en="NFNZ - Nadační fond nezávislé žurnalistiky" data-cz="NFNZ - Nadační fond nezávislé žurnalistiky">NFNZ - Nadační fond nezávislé žurnalistiky</p>
+          <p data-en="Sep 2021 - Aug 2023 · 2 yrs" data-cz="Září 2021 - Říjen 2023 · 2 roky">Sep 2021 - Aug 2023 · 2 yrs</p>
+          <p data-en="<strong>Job description: </strong> Conduct qualitative research on media content within the NFNZ Rating framework, involving reading and coding articles."
+            data-cz="<strong>Popis práce: </strong> Pracovní pozice zahrnovala provádění kvalitativního výzkumu mediálního obsahu v rámci hodnocení NFNZ,<br> které zahrnovalo čtení a kódování článků."><strong>Job description: </strong> Conduct qualitative research on media content within the NFNZ Rating framework, involving reading and coding articles.</p>
+          <p class="project-info">Excel</p>
+          <p class="project-info">Wayback Machine</p>
+          <div class="line"></div>
+          <br>
+        <h3 data-en="Recruitment Officer" data-cz="Pracovník náborového oddělení">Recruitment Officer</h3>
+          <p data-en="Agentura STUDENT s.r.o" data-cz="Agentura STUDENT s.r.o">Agentura STUDENT s.r.o</p>
+          <p data-en="Jul 2016 - Jun 2022 · 6 yrs" data-cz="Červenec 2016 - Červen 2022 · 6 let">Jul 2016 - Jun 2022 · 6 yrs</p>
+          <p data-en="<strong>Job description: </strong> The main tasks of this position involved data entry into the PC, working in Excel, drafting employment contracts, <br> and engaging in telephone communication with clients."
+            data-cz="<strong>Popis práce: </strong> Hlavní náplní práce na této pozici bylo zadávání dat do počítače, práce v programu Excel, sepisování pracovních smuv <br> a telefonická komunikace s klienty."><strong>Job description: </strong> The main tasks of this position involved data entry into the PC, working in Excel, drafting employment contracts, <br> and engaging in telephone communication with clients.</p>
+          <p class="project-info">Bláhovec</p>
+          <p class="project-info">Excel</p>
+    </div>
+  </div>
+  </div>
+
+  <div class="section certificates">
+    <div class="entry">
+      <div class="section-content">
+        <div class="certificate-columns">
+          <h2 data-en="Certificates" data-cz="Certifikáty">Certificates</h2>
+          <div class="certificate-column">
+              <h3>Google Cybersecurity Professional Certificate</h3>
+              <p><a href="###">Coursera</a></p>
+              <p data-en="November 2024" data-cz="Listopad 2024">November 2024</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+              <h3 data-en="How to automate tests" data-cz="Jak automatizovat testy">How to automate tests</h3>
+              <p><a href="http://certificate.kitner.cz/966817544.pdf">Kitner.cz <img src="../assets/icons/filetype-pdf.svg" alt="pdf"></a></p>
+              <p data-en="May 2024" data-cz="Květen 2024">May 2024</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+            <h3>TOTAL: CompTIA A+ Core 1 (220-1101) Course</h3>
+              <p><a href="https://www.udemy.com/certificate/UC-11665c28-008d-45e9-99f9-f342c740b2eb/">Udemy <img src="../assets/icons/link.svg" alt="pdf"></a></p>
+              <p data-en="March 2024" data-cz="Duben 2024">March 2024</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+            <h3>The HTML & CSS Bootcamp 2024 Edition</h3>
+              <p><a href="https://www.udemy.com/certificate/UC-5cb73c8b-d188-4333-873c-4e8edbf80c47/">Udemy <img src="../assets/icons/link.svg" alt="pdf"></a></p>
+              <p data-en="February 2024" data-cz="Únor 2024">February 2024</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+            <h3 data-en="How to become a tester" data-cz="Jak se stát testerem">How to become a tester</h3>
+              <p><a href="http://certificate.kitner.cz/966816475.pdf">Kitner.cz <img src="../assets/icons/filetype-pdf.svg" alt="pdf"></a></p>
+              <p data-en="September 2023" data-cz="Září 2023">September 2023</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+              <h3>The Git & Github Bootcamp</h3>
+              <p><a href="https://www.udemy.com/certificate/UC-c89ef6e3-097a-4e15-a0a6-4f9d979523a6/"> Udemy <img src="../assets/icons/link.svg" alt="pdf"></a></p>
+              <p data-en="July 2023" data-cz="Červenec 2023">July 2023</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+            <h3>Python 1</h3>
+              <p>Czechitas</p>
+              <p data-en="June 2023" data-cz="Červen 2023">June 2023</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+            <h3>The Ultimate MySQL Bootcamp: Go from SQL <br> Beginner to Expert</h3>
+              <p><a href="https://www.udemy.com/certificate/UC-6bedd9b4-4b12-426b-bb2b-3da3ccdae059/"> Udemy <img src="../assets/icons/link.svg" alt="pdf"></a></p>
+              <p data-en="February 2024" data-cz="Únor 2024">April 2023</p>
+              <br>
+              <div class="line2"></div>
+              <br>
+              <h3>First Certificate in English</h3>
+              <p>Cambridge International Education</p>
+              <p class="dec" data-en="December 2022" data-cz="Prosinec 2022">December 2022</p>
+  </div>
+  <div class="certificate-column">
+    <h2 data-en="Skills" data-cz="Znalosti">Skills</h2>
+      <h3 data-en="Language" data-cz="Jazykové znalosti">Language</h3>
+        <p data-en="English B2" data-cz="Anglický jazyk B2">English B2</p>
+    <br>
+      <h3 data-en="Technical Skills" data-cz="Technické znalosti">Technical Skills</h3>
+        <p>Jira</p>
+        <p>Confluence</p>
+        <p>Robot Framework</p>
+        <p>MySQL</p>
+        <p>Github</p>
+        <p>Postman</p>
+        <p>Python</p>
+        <p>HTML & CSS</p>
+        <p>Visual Studio Code</p>
+        <p>Pycharm</p>
+  </div>
+          
+</div>
+</div>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

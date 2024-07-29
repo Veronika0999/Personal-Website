@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronika Křivánková</title>
+    <link rel="icon" type="image/png" href="../assets/icons/bug.svg">
+    <link rel="stylesheet" href="styles/certificate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" data-en="Home" data-cz="Domů">Home</a></li>
+            <li><a href="aboutme.html" data-en="About me" data-cz="O mě">O mě</a></li>
+            <li><a href="#" data-en="Certificates" data-cz="Certifikáty">Certificates</a></li>
+            <li><a href="project.html" data-en="My Projects" data-cz="Projekty">Projects</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <nav class="mobileNav">
+        <a href="index.html" data-en="Home" data-cz="Domů">Home</a>
+        <a href="aboutme.html" data-en="About" data-cz="O mě">About</a>
+        <a href="#" data-en="Certificates" data-cz="Certifikáty">Certificates</a>
+        <a href="project.html" data-en="Projects" data-cz="Projekty">Projects</a>
+        <div class="language-switch">
+            <button onclick="switchLanguage('en')">ENG</button>
+            <button onclick="switchLanguage('cz')">CZ</button>
+        </div>
+    </nav>
+
+    <div class="language-switch">
+        <button data-en="English" data-cz="Angličtina" onclick="switchLanguage('en')">English</button>
+        <button data-en="Czech" data-cz="Čeština" onclick="switchLanguage('cz')">Čeština</button>
+    </div>
+
+    <main>
+      <h1  data-en="Certificates" data-cz="Certifikáty">Certifikáty</h1>
+      
+      <div class="filters">
+          <select id="platformFilter">
+              <option data-en="All platforms" data-cz="Všechny platformy" value="all">Všechny platformy</option>
+              <option value="coursera">Coursera</option>
+              <option value="czechitas">Czechitas</option>
+              <option value="kitner">Radek Kitner</option>
+              <option value="udemy">Udemy</option>
+          </select>
+          
+          <select id="dateFilter">
+              <option value="newest" data-en="From the latest" data-cz="Od nejnovějších">Od nejnovějších</option>
+              <option value="oldest" data-en="From the oldest" data-cz="Od nejstarších">Od nejstarších</option>
+          </select>
+      </div>
+      
+      <div class="certificates-container">
+          <div class="certificate" data-platform="udemy" data-date="2023-04-06">
+            <a href="https://www.udemy.com/certificate/UC-6bedd9b4-4b12-426b-bb2b-3da3ccdae059/"><img src="../assets/img/cer_sql.jpg" alt="sql"></a>
+          </div>
+          <div class="certificate" data-platform="czechitas" data-date="2023-04-06">
+            <img src="../assets/img/cer_python.png" alt="python">
+        </div>
+        <div class="certificate" data-platform="udemy" data-date="2023-07-19">
+            <a href="https://www.udemy.com/certificate/UC-c89ef6e3-097a-4e15-a0a6-4f9d979523a6/"><img src="../assets/img/cer_git.jpg" alt="git"></a>
+        </div>
+        <div class="certificate" data-platform="kitner" data-date="2023-09-13">
+            <a href="http://certificate.kitner.cz/966816475.pdf"><img src="../assets/img/cer_jst.png" alt="tester"></a>
+        </div>
+        <div class="certificate" data-platform="udemy" data-date="2024-02-17">
+            <a href="https://www.udemy.com/certificate/UC-5cb73c8b-d188-4333-873c-4e8edbf80c47/"><img src="../assets/img/cer_html.jpg" alt="html"></a>
+        </div>
+          <div class="certificate" data-platform="udemy" data-date="2024-3-28">
+            <a href="https://www.udemy.com/certificate/UC-11665c28-008d-45e9-99f9-f342c740b2eb/"><img src="../assets/img/cer_comptia.jpg" alt="comptia"></a>
+          </div>
+          <div class="certificate" data-platform="kitner" data-date="2024-05-13">
+            <a href="http://certificate.kitner.cz/966817544.pdf"></a><img src="../assets/img/cer_jat.png" alt="tester"></a>
+        </div>
+      </div>
+  </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #CFC4C4;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    color: #524F4a;
+    font-family: Montserrat;
+}
+
+ h1 {
+    font-size: 60px;
+    color: white;
+    font-family:Castoro Titling, sans-serif;
+    padding-left: 50px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+ }
+
+ h2 {
+    font-size: 25px;
+    font-family:Castoro Titling, sans-serif;
+    margin-top: 0;
+    margin-left: 210px
+ }
+
+/*** Navbar ***/
+
+nav {
+    background-color: #CFC4C4;
+    text-align: right;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; 
+    margin-top: 10px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: #524F4a;
+    font-size: 20px
+}
+
+nav ul li a:hover {
+    color: #fff; 
+}
+
+/*** Mobile navbar ***/
+
+.hamburger {
+    padding: 50px 40px;
+}
+
+.hamburger {
+    position: fixed; 
+    top: 20px;
+    right: 20px; 
+    padding: 20px;
+    z-index: 100; 
+}
+
+.bar1,
+.bar2,
+.bar3{
+    background-color: white;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.navbar .hamburger{
+  display: none;
+}
+
+.navbar .hamburger:hover{
+    cursor: pointer;  
+}
+
+.mobileNav{
+    width: 80px;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: -160px;
+    padding: 16px;
+    transition: transform 0.3s;
+}
+
+.openDrawer {
+    transform: translateX(-160px);
+}
+
+.mobileNav a{
+    text-decoration: none;
+    color:#524F4a;
+    margin: 16px 0;
+}
+
+.mobileNav a:hover{
+    text-decoration: underline;
+}
+
+/*** About me ***/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(80vh - 50px); 
+    overflow: hidden;
+    flex-direction: row; 
+    padding-top: 50px; 
+}
+
+.container img {
+    margin: 0;
+    border: 5px solid white;
+    border-radius: 0px; 
+    max-height: 40vh !important; /* Ensure the image height is responsive */
+    max-width: 40vw !important
+}
+
+.text {
+  max-width: 35%;
+  padding-left: 150px;
+  padding-top: 70px;
+  text-align: justify;
+}
+
+
+/* Language settings - Czech vs English */
+
+.language-switch {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 20px 20px 0 0; 
+  }
+  
+  .language-switch button {
+    background-color: transparent;
+    color: #333; 
+    border: 1px solid #fff; 
+    border-radius: 30px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 14px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .language-switch button:hover {
+    background-color: #f0f0f0;
+    border-color: #ddd; 
+  }
+  
+  .language-switch button:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .language-switch button.selected {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    border-color: #fff;
+  }
+
+/***** Experience *****/
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+    list-style: none; /* Remove default list styling */
+    margin: 0 auto; /* Center the list within its container */
+    max-width: 40%; /* Optional: Limit the maximum width of the skills section */
+  }
+  
+  .skills li {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding in element's width/height */
+    flex: 0 0 calc(33.333% - 20px); /* Show three items per row with spacing */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skills li img {
+    margin-left: 10px;
+    width: 18px; /* Set a fixed width for icons */
+    height: auto;
+  }
+
+
+/* Responsive web design */
+
+@media screen and (max-height: 696px){
+    .text {
+        padding-top: 0px;
+      }
+}
+
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 45px;
+     }
+
+     h2 {
+        font-size: 20px;
+        padding-top: 35px;
+        margin-left: 20px
+     }
+
+     .text {
+        padding-top: 0px;
+        max-width: 40%;
+        padding-left: 30px;
+
+      }
+}
+
+
+@media only screen and (max-width: 768px){
+    .language-switch {
+        display: none; 
+    }
+
+    .mobileNav .language-switch {
+        display: grid;
+    }
+
+    
+    .navbar {
+        display: none; 
+    }
+    
+    .navbar .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;
+      }   
+
+    .container img {
+    display: none;
+}
+
+.text {
+    padding-left: 0px;
+    padding-top: 5px;
+    max-width: 65%;
+    padding-bottom: 0px;
+  }
+
+.container{
+    height: calc(66vh - 50px); 
+}
+}
+
+.animateBar1 {
+    animation: flipBar1 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar2 {
+    animation: fadeBar2 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animateBar3 {
+    animation: flipBar3 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipBar1 {
+    from {
+        transform: rotate(0);
+    }
+
+    from {
+        transform: rotate(45deg) translate(4px, 10px);
+    }
+}
+
+@keyframes fadeBar2 {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    from {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+}
+
+@keyframes flipBar3 {
+    from {
+        transform: rotate(0);
+    }
+
+    from {
+        transform: rotate(-45deg) translate(4px, -10px);
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hamburger {
+        display: none; 
+    }
+    
+    .mobileNav {
+        display: flex; 
+    }
+}
+@media only screen and (max-width: 585px){
+.container{
+    padding-top: 10px;
+    height: calc(80vh - 50px); 
+}
+}
+
+@media only screen and (max-width: 477px){
+    .container{
+        padding-top: 10px;
+        height: calc(95vh - 50px);   
+    }
+    }
+
+    p{
+        font-size: 15px; 
+     }
+
+
+@media only screen and (max-width: 400px){
+
+
+    h1 {
+        font-size: 35px;
+     }
+
+    h2 {
+        font-size: 18px;
+
+     }
+
+     p{
+        font-size: 14px; 
+     }
+
+}
