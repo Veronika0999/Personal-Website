@@ -141,7 +141,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: calc(80vh - 50px); 
+    height: calc(50vh - 50px); 
     overflow: hidden;
     flex-direction: row; 
     padding-top: 50px; 
