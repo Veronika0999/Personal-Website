@@ -233,10 +233,10 @@ main {
   }
 
   .container > img {
-      max-height: 50vh !important; /* Ensure the image height is responsive */
-      max-width: 50vw !important;  /* Ensure the image width is responsive */
-      height: auto;                /* Maintain aspect ratio */
-      width: auto;                 /* Maintain aspect ratio */
+      max-height: 50vh !important;
+      max-width: 50vw !important;  
+      height: auto;                
+      width: auto;                 
   }
 }
 
@@ -244,8 +244,8 @@ main {
 
 
   .certificate {
-    flex: 0 0 45%; /* Zabere cca polovinu prostoru kontejneru, s ohledem na mezery */
-    margin-bottom: 20px; /* Prostor mezi řádky certifikátů */
+    flex: 0 0 45%;
+    margin-bottom: 20px; 
   }
 
 }
