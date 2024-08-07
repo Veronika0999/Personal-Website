@@ -9,7 +9,7 @@ body {
 }
 
  h1 {
-    font-size: 60px;
+    font-size: 65px;
     color: white;
     font-family:Castoro Titling, sans-serif;
     padding-left: 50px;
@@ -24,10 +24,6 @@ body {
     margin-top: 0;
     margin-left: 210px
  }
-
-    p{
-        font-size: 18px; 
-     }
 
 /*** Navbar ***/
 
@@ -130,13 +126,12 @@ nav ul li a:hover {
 }
 
 /*** About me ***/
-
 main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
   }
-
+  
 .container {
     display: flex;
     justify-content: center;
@@ -151,7 +146,7 @@ main {
     margin: 0;
     border: 5px solid white;
     border-radius: 0px; 
-    max-height: 30vh !important;
+    max-height: 30vh !important; /* Ensure the image height is responsive */
     max-width: 30vw !important
 }
 
@@ -160,6 +155,7 @@ main {
   padding-left: 100px;
   text-align: justify;
 }
+
 
 /* Language settings - Czech vs English */
 
@@ -203,11 +199,11 @@ main {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center; /* Center items horizontally */
     padding: 20px;
-    list-style: none; 
-    margin: 0 auto; 
-    max-width: 50%; 
+    list-style: none; /* Remove default list styling */
+    margin: 0 auto; /* Center the list within its container */
+    max-width: 50%; /* Optional: Limit the maximum width of the skills section */
   }
   
   .skills li {
@@ -215,8 +211,8 @@ main {
     border-radius: 5px;
     padding: 10px 15px;
     margin: 10px;
-    box-sizing: border-box; 
-    flex: 0 0 calc(33.333% - 20px);
+    box-sizing: border-box; /* Include padding in element's width/height */
+    flex: 0 0 calc(33.333% - 20px); /* Show three items per row with spacing */
     text-align: center;
     display: flex;
     align-items: center;
@@ -225,12 +221,26 @@ main {
   
   .skills li img {
     margin-left: 10px;
-    width: 18px;
+    width: 18px; /* Set a fixed width for icons */
     height: auto;
   }
 
 
 /* Responsive web design */
+ @media screen and (min-height: 931px){
+    p {
+       font-size: 19px !important;
+       padding-top: 0px;
+      }
+    
+      .text {
+        padding-top: 0px;
+        font-size: 5px;
+      }
+} 
+
+
+
 
 @media screen and (max-height: 696px){
     .text {
