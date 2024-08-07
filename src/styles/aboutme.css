@@ -28,6 +28,7 @@ body {
     p{
         font-size: 18px; 
      }
+
 /*** Navbar ***/
 
 nav {
@@ -129,6 +130,13 @@ nav ul li a:hover {
 }
 
 /*** About me ***/
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
 .container {
     display: flex;
     justify-content: center;
@@ -143,17 +151,15 @@ nav ul li a:hover {
     margin: 0;
     border: 5px solid white;
     border-radius: 0px; 
-    max-height: 40vh !important; /* Ensure the image height is responsive */
-    max-width: 40vw !important
+    max-height: 30vh !important;
+    max-width: 30vw !important
 }
 
 .text {
   max-width: 35%;
-  padding-left: 150px;
-  padding-top: 70px;
+  padding-left: 100px;
   text-align: justify;
 }
-
 
 /* Language settings - Czech vs English */
 
@@ -197,11 +203,11 @@ nav ul li a:hover {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; 
     padding: 20px;
-    list-style: none; /* Remove default list styling */
-    margin: 0 auto; /* Center the list within its container */
-    max-width: 40%; /* Optional: Limit the maximum width of the skills section */
+    list-style: none; 
+    margin: 0 auto; 
+    max-width: 50%; 
   }
   
   .skills li {
@@ -209,8 +215,8 @@ nav ul li a:hover {
     border-radius: 5px;
     padding: 10px 15px;
     margin: 10px;
-    box-sizing: border-box; /* Include padding in element's width/height */
-    flex: 0 0 calc(33.333% - 20px); /* Show three items per row with spacing */
+    box-sizing: border-box; 
+    flex: 0 0 calc(33.333% - 20px);
     text-align: center;
     display: flex;
     align-items: center;
@@ -219,7 +225,7 @@ nav ul li a:hover {
   
   .skills li img {
     margin-left: 10px;
-    width: 18px; /* Set a fixed width for icons */
+    width: 18px;
     height: auto;
   }
 
